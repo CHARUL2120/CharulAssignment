@@ -111,16 +111,19 @@ line-height: 15px;
 }
 .dashitems {
 display: inline;
+width: 100%;
+height: auto;
 
 background: #FFFFFF;
 align-items:center;
 }
 #ulitems {
+    
 display: inline;
-
+padding: 20px;
 background: #FFFFFF;
 border-radius:8px;
-margin-right:40px;
+margin-right:60px;
 
 }
 .imggraph{
@@ -184,3 +187,7 @@ opacity: 1;
 border-radius: 9px;
 margin-top: 18px;
 }
+li.a:hover{
+    color: #C8242F;
+}
+
