@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+         <title>Innerpage</title>
+         <meta content="text/html; charset=utf-8">
+         <link href="css/style3.css" rel="stylesheet" type="text/css">
+         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+         <script href="js/bootstrap.bundle.min.js"></script>
+         <script>
+             function setnewimage1()
+             {
+                    document.getElementById('img1').src ="images/dashboard-active.svg";
+             }
+             function setoldimage1()
+             {
+                document.getElementById('img1').src ="images/dashboard-default.svg";
+             }
+             function setnewimage2()
+             {
+                    document.getElementById(img2).src ="images/graph-active.svg";
+             }
+             function setoldimage2()
+             {
+                document.getElementById(img2).src ="images/graph-default.svg";
+             }
+         </script>
+         
+</head>
+<body>
+    <div class="body">
+          <header class="d-flex align-items-center text-dark" >
+              <img src="images/menu-bar.svg" class="icnmenu" />
+              <img src="images/header-logo.svg" class="icnlogo" />
+              <img src="images/search-icon.svg" class="icnsearch" />
+              <input type="text" placeholder="Search" class="txtsearch" />
+              <img src="images/notification-icon.svg" class="icnnotification" />
+              <img src="images/profile.png" class="imgprofile"/><span class="proname">Jhon Doe</span>
+              <img src="images/downward-arrow.svg" class="icndown"/>
+        </header>
+        <section>
+            <nav class="d-flex">
+                <ul class="nav flex-column" style="padding-left: 25px; ">
+                <li class="nav-item " class="txt"><a href="#" class="nav-link link-dark" onmouseover="setnewimage1()" onmouseout="setoldimage1()" ><img id="img1" src="images/dashboard-default.svg" class="icnsidebar" />Dashboard</a></li>
+                <li ><a href="#" class="nav-link" onmouseover="setnewimage2()"  onmouseout="setoldimage2()" style="color: #3E3E3E;"><img id="img2" src="images/graph-default.svg" class="icnsidebar" />Analysis</a></li>
+                <li ><a href="#" class="nav-link" onmouseover="setnewimage3"  onmouseout="setoldimage3" style="color: #3E3E3E;"><img src="images/inbox-default.svg" class="icnsidebar" />Inbox</a></li>
+                <li ><a href="#" class="nav-link" onmouseover="setnewimage4"  onmouseout="setoldimage4" style="color: #3E3E3E;"><img src="images/clock-default.svg" class="icnsidebar" />History</a></li>
+                <li ><a href="#" class="nav-link" onmouseover="setnewimage5"  onmouseout="setoldimage5" style="color: #3E3E3E;"><img src="images/user-default.svg" class="icnsidebar" />Users</a></li>
+                <li ><a href="#" class="nav-link" onmouseover="setnewimage6"  onmouseout="setoldimage6" style="color: #3E3E3E;"><img src="images/maintenance-default.svg" class="icnsidebar" />Maintenance</a></li>
+                <li ><a href="#" class="nav-link" onmouseover="setnewimage7"  onmouseout="setoldimage7" style="color: #3E3E3E;"><img src="images/setting-default.svg" class="icnsidebar" />Setting</a></li>
+                </ul>
+                </nav>
+        </section>    
+                
+        <article style="background: #FAFAFA;padding-left:250px;padding-bottom:50px; margin-left: 50px;padding-right: 50px;" >
+           <p style="margin-left:50px;font-size:30px; line-height:40px; font-weight:bold;padding-top:41px;font: normal normal medium 30px/39px Roboto;">Analysis</p>
+
+           <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+           
+            <div class="col" style="background: #FFFFFF 0% 0% no-repeat padding-box; border-radius: 5px;opacity: 1;padding-left: 30px;padding-right: 30px;">
+                <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;"> One Column </p>
+                <input type="text" id="name" placeholder="Name"/><br />
+                <select class="form-select" id="namedropdown" >
+                    <option value="Dropdown1">Dropdown</option>
+                </select>
+                    <textarea  style="width: 100%;height: 130px; border: 1px solid #ADADAD;border-radius: 5px;opacity: 1;" placeholder="Multiple line"></textarea><br />
+                    <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 44px;"> Two Column </p>
+               
+                <div class="row">
+                        <div class="column" >
+                            <input type="text" id="name2" placeholder="Name"/>
+                            <input type="password" id="password1" placeholder="Password"/>
+
+                        </div>
+                        <div class="column" >
+                             <input type="text" id="username" placeholder="Username"/>
+                             <select id="namedropdown2" >
+                                <option value="Dropdown2">Dropdown</option></select>
+
+                        </div>
+                </div>  
+                <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 44px;"> Three Column </p>
+                <div class="row">
+                    <div class="col" >
+                        <div class="form-floating">
+                            <input type="text"  style="width: 100%; height: 58px;border: 1px solid #C8242F;border-radius: 5px; opacity: 1;" class="form-control" id="floatingInput" placeholder="Focus">
+                            <label for="floatingInput">Focus</label>
+                          </div>
+                        
+
+                    </div>
+                    <div class="col" >
+                        <div class="form-floating">
+                            <input type="password" style="width: 100%; height: 58px;border: 1px solid #ADADAD;border-radius: 5px; opacity: 1;" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                          </div>
+                    </div>      
+                     <div class="col" >
+                        <div class="form-floating">
+                                <input type="text" style="width: 100%; height: 58px;border: 1px solid #ADADAD;border-radius: 5px; opacity: 1;" class="form-control" id="floatingInput" placeholder="Disabled" value="johndoe" disabled>
+                                <label for="floatingInput">Disabled</label>
+                        </div>      
+                    </div>
+                </div> 
+
+
+                <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 44px;"> Four Column </p>
+                <div class="row">
+                    <div class="col" >
+                        <div class="form-floating">
+                            <input type="text"  style="width: 100%; height: 58px;border: 1px solid #C8242F;border-radius: 5px; opacity: 1;" class="form-control" id="floatingInput" placeholder="Designation" value="UI designer" >
+                            <label    for="floatingInput"> Designation</label>
+                          </div>
+                        
+
+                    </div>
+                    <div class="col" >
+                        <input type="text" id="name3" placeholder="   Name"/>
+                    </div>      
+                     <div class="col" >
+                        <div class="form-floating">
+                                <input type="text" style="width: 100%; height: 58px;border: 1px solid #ADADAD;border-radius: 5px; opacity: 1;" class="form-control" id="floatingInput" placeholder="Username" value="johndoe">
+                                <label for="floatingInput">Username</label>
+
+                        </div> 
+                     </div>  
+                    <div class="col" >    
+                         <select id="Dropdown4">
+                            <option value="">Select</option>  </select>
+                    </div>
+                </div>
+
+                <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 24px;margin-top: 69px;"> Other Design Elements </p>
+              <div class="row">
+                <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 21px;"> File Upload</p><br />
+                <form>
+                    <div class="form-group">
+                      <button  id="but" style=" width: 124px;height: 36px;color: #C8242F; border: 1px solid #C8242F;border-radius: 18px;opacity: 1;background-color: #FFFFFF;" ><img src="images/cloud-upload-icon.svg" class="Upload">Upload</button><span class="Textu">No item Selected</span>
+                    </div>
+                </form><br>
+            </div>
+
+            
+            <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 36px;"> Radio Button</p>
+            <div class="row">
+                <div class="col" >
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Option 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Option 2</label>
+                      </div>
+                </div>
+            </div>     
+            <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 32px;"> Checkbox</p>
+            <div class="row">
+                <div class="col" >
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                      </div>
+                </div>
+            </div>   
+            <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 34px;"> Snackbar</p>
+            <div class="row">
+                <div class="col" >
+                    <div class="alert alert-danger" role="alert" style="border: 1px solid #FF3535;border-radius: 5px;opacity: 1;">
+                        <img src="images/error-icon.svg" style="width: 20px; height: 20px;">
+                        
+                         <span style="text-align: left;font: normal normal normal 15px/20px Roboto;letter-spacing: 0px; color: #FF3535; opacity: 1;">This is an error Message</span> 
+                        
+                      </div>
+                    
+                        <div class="alert alert-danger" role="alert" style="border: 1px solid #FFA800;border-radius: 5px;opacity: 1;">
+                            <img src="images/warning-icon.svg" style="width: 20px; height: 20px;">
+                            
+                             <span style="text-align: left;font: normal normal normal 15px/20px Roboto;letter-spacing: 0px; color: #FFA800; opacity: 1;">This is a warning message!</span> 
+                            
+                        </div>  
+                </div>
+
+                <div class="col" >
+                    <div class="alert alert-primary" role="alert" style="border: 1px solid #00B9E1;border-radius: 5px;opacity: 1;">
+                        <img src="images/info-icon.svg" style="width: 20px; height: 20px;">
+                        
+                         <span style="text-align: left;font: normal normal normal 15px/20px Roboto;letter-spacing: 0px; color: #00B9E1; opacity: 1;">This is an information message!</span> 
+                        
+                      </div>
+                    
+                        <div class="alert alert-success" role="alert" style="border: 1px solid #00AF27;border-radius: 5px;opacity: 1;">
+                            <img src="images/success-icon.svg" style="width: 20px; height: 20px;">
+                            
+                             <span style="text-align: left;font: normal normal normal 15px/20px Roboto;letter-spacing: 0px; color: #00AF27; opacity: 1;">This is a Success message!</span> 
+                            
+                        </div>  
+                </div>
+            </div>  
+            
+            <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 34px;"> Call to action</p>
+             
+                    
+                      <button  id="butp"  ><span style="width: 63px;height: 24px;text-align: left;font: normal normal medium 18px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;font-weight: bolder;">Primary</span></button>
+                       <button  id="buts"  ><span style="width: 63px;height: 24px;text-align: left;font: normal normal medium 18px/24px Roboto;letter-spacing: 0px;color: #C8242F;opacity: 1;font-weight: bolder;">Secondary</span></button>
+                
+                       <p id="col1" style="text-align: left; font: normal normal medium 22px/29px Roboto;letter-spacing: 0px;color: #3E3E3E;opacity: 1;font-size: 18px;margin-top: 34px;"> Tab</p>
+
+                       <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab1" data-bs-toggle="tab"  type="button" role="tab" aria-controls="Tab1" aria-selected="true">Tab1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link 1" id="tab2" data-bs-toggle="tab"  type="button" role="tab" aria-controls="Tab2" aria-selected="false" style="color: #ADADAD;">Tab2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link 1" id="tab3" data-bs-toggle="tab"  type="button" role="tab" aria-controls="Tab3" aria-selected="false" style="color: #ADADAD;">Tab3</button>
+                        </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                  
+                        </div>
+
+
+                </div>
+               </div>
+              </div>
+
+            </div> 
+
+            </div>  
+            </div>    
+                              
+                  
+           
+            
+            
+            
+                 
+            </div>
+        
+            </div>
+        </div>
+         
+        </article>
+    </ul>
+    </div>    
