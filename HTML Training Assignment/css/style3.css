@@ -14,6 +14,8 @@ width: 150px;
 height: 30px;
 
 }
+
+
 .icnsearch {
 margin-right:5px;
 width: 25px;
@@ -31,6 +33,7 @@ border-style:none;
 }
 .nav-link:hover{
     background-color: #FFF3F4;
+    
 
 }
 .nav-link{
@@ -75,7 +78,7 @@ list-style-type:none;
 width:25px;
 height:25px;
 margin-right:10px;
-color: #3E3E3E;
+
 }
 
 .nav-link{
@@ -86,10 +89,8 @@ font-family: 'Roboto', sans-serif;
 font-weight: normal normal normal;
 line-height: 21px;
 }
-a.nav-link:hover {
-background: #FFF3F4 0% 0% no-repeat padding-box;
-color: #C8242F;
-}
+
+
 #columnone{
     font-size: 22px;
     font: normal normal medium 22px/29px Roboto;
