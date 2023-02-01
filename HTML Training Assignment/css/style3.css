@@ -7,6 +7,7 @@ width: 100%;
 margin-right:15px;
 width: 25px;
 height: 25px;
+background-color: #FFFFFF;
 }
 .icnlogo {
 margin-right:25px;
@@ -32,9 +33,13 @@ line-height:21px;
 border-style:none;
 }
 .nav-link:hover{
+    
     background-color: #FFF3F4;
     
 
+}
+.da:hover{
+    color: #C8242F;
 }
 .nav-link{
     padding-left: 30px;
@@ -201,7 +206,4 @@ color: #3E3E3E;
 opacity: 1;
 font-size: 15px;
 }
-.nav-link link-dark a:hover {
-    background: #FFF3F4;
-    color: #C8242F;
-}
+
